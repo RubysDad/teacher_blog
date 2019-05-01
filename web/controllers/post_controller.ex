@@ -1,7 +1,7 @@
 defmodule Teacher.PostController do
   use Teacher.Web, :controller
 
-  alias Teacher.Post
+  alias Teacher.{Post, Comment}
 
   def index(conn, _params) do
     posts = Repo.all(Post)
@@ -27,8 +27,11 @@ defmodule Teacher.PostController do
   end
 
   def show(conn, %{"id" => id}) do
-    post = Repo.get!(Post, id)
-    render(conn, "show.html", post: post)
+    post = Post
+           |> Repo.get(id)
+           |> Repo.preload(:comments)
+    comment_changeset = Comment.changeset(%Comment{})
+    render(conn, "show.html", post: post, comment_changeset: comment_changeset)
   end
 
   def edit(conn, %{"id" => id}) do
