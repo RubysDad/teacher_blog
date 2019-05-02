@@ -1,36 +1,40 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2><%= gettext "Welcome" %></h2>
+  <p class="lead">I'm Mark Morales<br />I build web apps. Email me for hire at marktravismorales@gmail.com</p>
 </div>
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
+<div class="container-fluid" style="text-align: center;">
+	<div class="row">
+		<div class="col-md-12">
+			<dl>
+				<dt>
+					A little about me...
+				</dt><br/>
+				<dd>
+					I'm a web developer who has a passion for learning and maintains code integrity
+				</dd><br/>
+				<dt>
+					Euismod
+				</dt><br/>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd><br/>
+				<dd>
+					Donec id elit non mi porta gravida at eget metus.
+				</dd><br/>
+				<dt>
+					Malesuada porta
+				</dt><br/>
+				<dd>
+					Etiam porta sem malesuada magna mollis euismod.
+				</dd><br/>
+				<dt>
+					Felis euismod semper eget lacinia
+				</dt><br/>
+				<dd>
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+				</dd>
+			</dl>
+		</div>
+	</div>
 </div>
